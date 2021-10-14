@@ -2,7 +2,15 @@
 
 source 'https://rubygems.org'
 
-gem 'capybara'
-gem 'rspec'
+gem 'rack'
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'sinatra-reloader'
+
+group :test do
+  gem 'capybara'
+  gem 'rspec'
+  gem 'rubocop', '1.20'
+  gem 'simplecov', require: false
+  gem 'simplecov-console', require: false
+end
