@@ -1,3 +1,4 @@
-echo "coverage" >> .gitignore
+/**/.DS_Store
+/coverage
+
 .rubocop-*
-*.json

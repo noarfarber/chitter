@@ -14,14 +14,24 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
           null
         ]
+      },
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/see_peeps_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1634305550
+    "timestamp": 1634574304
   }
 }
