@@ -12,5 +12,13 @@ class Chitter < Sinatra::Base
     'Chitter'
   end
 
+  get '/peeps' do
+    peeps = [
+      "Hello world",
+      "I need coffee"
+    ]
+    p peeps.join
+  end
+
   run! if app_file == $PROGRAM_NAME
 end

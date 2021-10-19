@@ -18,10 +18,18 @@
           null,
           null,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
           null
         ]
       },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/see_peeps_spec.rb": {
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/index_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -30,8 +38,20 @@
           null,
           null
         ]
+      },
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/viewing_peeps_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1634574304
+    "timestamp": 1634647552
   }
 }
