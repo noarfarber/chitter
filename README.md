@@ -53,3 +53,7 @@ I want to log out of Chitter
 * PostgreSQL
 * HTML
 * CSS
+
+## Domain model
+
+![diagram-peeps-all](./images/diagram-peeps-all.png)

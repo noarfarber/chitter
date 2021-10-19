@@ -2,6 +2,7 @@
 
 require 'sinatra/base'
 require 'sinatra/reloader'
+require './lib/peep'
 
 class Chitter < Sinatra::Base
   configure :development do
@@ -13,11 +14,9 @@ class Chitter < Sinatra::Base
   end
 
   get '/peeps' do
-    peeps = [
-      "Hello world",
-      "I need coffee"
-    ]
-    p peeps.join
+    @peeps = Peep.all
+    
+    erb :'peeps/home'
   end
 
   run! if app_file == $PROGRAM_NAME
