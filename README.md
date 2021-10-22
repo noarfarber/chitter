@@ -48,6 +48,10 @@ I want to log out of Chitter
 * Create the database using the command `CREATE DATABASE chitter;`
 * Connect to the database using `\c chitter;`
 * Run the query in the file `01_create_peeps_table.sql` to create a peeps table 
+* Create a database for tests using the command `CREATE DATABASE chitter_test;`
+* Connect to the database using `\c chitter_test;`
+* Run the query in the file `01_create_peeps_table.sql` to create the same peeps table for the test database
+
 
 ### To run the chitter app 
 ```
