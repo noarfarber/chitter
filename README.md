@@ -42,8 +42,19 @@ I want to log out of Chitter
 * `git clone` this repository
 * `cd` into it
 * Run `bundle install` 
-* 
 
+### Database setup
+* Connect to `psql`
+* Create the database using the command `CREATE DATABASE chitter;`
+* Connect to the database using `\c chitter;`
+* Run the query in the file `01_create_peeps_table.sql` to create a peeps table 
+
+### To run the chitter app 
+```
+rackup
+```
+
+* Navigate to `localhost:9292/peeps` to view all peeps.
 
 ## Tech stack
 * Ruby 
