@@ -8,7 +8,17 @@ class Peep
       connection = PG.connect(dbname: 'chitter')
     end
     
-    query = connection.exec("SELECT * FROM peeps;")
-    query.map { |peep| peep['peep'] }
+    result = connection.exec("SELECT * FROM peeps;")
+    result.map { |peep| peep['peep'] }
+  end
+
+  def self.create(peep:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'chitter_test')
+    else
+      connection = PG.connect(dbname: 'chitter')
+    end
+
+    connection.exec("INSERT INTO peeps (peep) VALUES('#{peep}')")
   end
 end

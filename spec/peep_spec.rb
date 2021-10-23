@@ -10,8 +10,16 @@ describe Peep do
 
       peeps = Peep.all
 
-      expect(peeps).to include("Hello world")
-      expect(peeps).to include("I need coffee")
+      expect(peeps).to include('Hello world')
+      expect(peeps).to include('I need coffee')
+    end
+  end
+
+  describe '.create' do
+    it 'creates a new post' do
+      Peep.create(peep: 'Too much coffee')
+
+      expect(Peep.all).to include 'Too much coffee'
     end
   end
 end
