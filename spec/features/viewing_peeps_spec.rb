@@ -4,8 +4,8 @@ feature 'Viewing peeps' do
   scenario 'The user sees a list of peeps' do
     connection = PG.connect(dbname: 'chitter_test')
 
-    Peep.create(peep: "Hello world")
-    Peep.create(peep: "I need coffee")
+    Peep.create(message: "Hello world")
+    Peep.create(message: "I need coffee")
 
     visit('/peeps')
 

@@ -14,7 +14,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/peeps' do
-    @peeps = Peep.all
+    @message = Peep.all
     
     erb :'peeps/home'
   end
@@ -24,7 +24,7 @@ class Chitter < Sinatra::Base
   end
 
   post '/peeps' do
-    Peep.create(peep: params[:peep])
+    Peep.create(message: params[:message])
     redirect '/peeps'
   end
 
