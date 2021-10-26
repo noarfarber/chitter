@@ -42,7 +42,7 @@
           null
         ]
       },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/peep_spec.rb": {
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/unit/peep_spec.rb": {
         "lines": [
           1,
           1,
@@ -60,7 +60,7 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
           null,
           null,
@@ -89,6 +89,6 @@
         ]
       }
     },
-    "timestamp": 1635183010
+    "timestamp": 1635254852
   }
 }
