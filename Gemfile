@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'pg'
 gem 'rack'
+gem 'rake'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-reloader'

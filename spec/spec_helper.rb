@@ -1,4 +1,9 @@
-# frozen_string_literal: true
+ENV['ENVIRONMENT'] = 'test'
+
+require 'rake'
+Rake.application.load_rakefile
+
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 require 'simplecov'
 require 'simplecov-console'
@@ -6,11 +11,6 @@ require 'pg'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
-require_relative './test_database_setup'
-
-ENV['ENVIRONMENT'] = 'test'
-
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 Capybara.app = Chitter
 
@@ -23,7 +23,7 @@ SimpleCov.start
 
 RSpec.configure do |config|
   config.before(:each) do
-    test_database_setup
+    Rake::Task['test_database_setup'].execute
   end
 
   config.after(:suite) do

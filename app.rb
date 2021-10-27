@@ -9,6 +9,8 @@ class Chitter < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  set :port, 9090
+
   get '/' do
     redirect '/peeps'
   end
