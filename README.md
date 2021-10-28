@@ -1,21 +1,22 @@
 # Chitter
+A Twitter clone that allows users to post messages to a public stream.
 
 ## Getting started
 
 * install PostgreSQL database management system
-* `git clone` this repository
+* `git clone git@github.com:noarfarber/chitter.git` 
 * `cd` into it
 * Run `bundle install`
-* rake setup
+* Run `rake setup`
 
-- Following the steps above, you will get a ready-to-go app with RSpec, Sinatra and Capybara installed and two databases: `chitter` for development environment and `chitter_test` for test environment
+Following the steps above, you will get a ready-to-go app with RSpec, Sinatra and Capybara installed and two databases: `chitter` (for development environment) and `chitter_test` (for test environment)
 
 ### To run the chitter app 
 ```
 rackup
 ```
 
-* Navigate to `localhost:9292` to view all peeps.
+Navigate to `localhost:9292` to view all peeps.
 
 ## User stories
 ```

@@ -3,4 +3,3 @@ coverage
 capybara-*.html
 .rubocop-*
 .rspec
-+*-timestamp
