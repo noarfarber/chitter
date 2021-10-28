@@ -16,6 +16,8 @@ task :setup do
     connection = PG.connect
     connection.exec("CREATE DATABASE #{database};")
     connection = PG.connect(dbname: database)
-    connection.exec("CREATE TABLE peeps(id SERIAL PRIMARY KEY, message VARCHAR(120));")
+    connection.exec("CREATE TABLE peeps(id SERIAL PRIMARY KEY, 
+      message VARCHAR(120), 
+      created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP);")
   end
 end
