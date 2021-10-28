@@ -60,5 +60,6 @@ I want to log out of Chitter
 * CSS
 
 ## Domain model
+The user can see all peeps and the time they were created:
 
-![diagram-peeps-all](./images/diagram-peeps-all.png)
+![diagram-all-peeps](./images/diagram-all-peeps.png)
