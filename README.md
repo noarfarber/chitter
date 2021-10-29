@@ -8,6 +8,7 @@ A Twitter clone that allows users to post messages to a public stream.
 * `cd` into it
 * Run `bundle install`
 * Run `rake setup`
+* rspec
 
 Following the steps above, you will get a ready-to-go app with RSpec, Sinatra and Capybara installed and two databases: `chitter` (for development environment) and `chitter_test` (for test environment)
 

@@ -3,8 +3,10 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/peep'
+require './db_conn_setup'
 
 class Chitter < Sinatra::Base
+  
   configure :development do
     register Sinatra::Reloader
   end

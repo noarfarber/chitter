@@ -1,6 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/db_conn_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/noafarber/Projects/week_4/chitter-new/spec/features/index_page_spec.rb": {
         "lines": [
           1,
@@ -102,6 +127,6 @@
         ]
       }
     },
-    "timestamp": 1635426294
+    "timestamp": 1635512875
   }
 }

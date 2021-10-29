@@ -1,4 +1,5 @@
 require 'pg'
+require_relative 'db_conn'
 
 class Peep
   attr_reader :id, :message, :created_at
@@ -10,27 +11,24 @@ class Peep
   end
 
   def self.all
-    if ENV['ENVIRONMENT'] == 'test'
-      connection = PG.connect(dbname: 'chitter_test')
-    else
-      connection = PG.connect(dbname: 'chitter')
-    end
-    
-    result = connection.exec("SELECT * FROM peeps ORDER BY id DESC;")
+    result = DatabaseConnection.query("SELECT * FROM peeps ORDER BY id DESC")
     result.map do |peep|
-      Peep.new(id: peep['id'], message: peep['message'], created_at: peep['created_at'])
+      Peep.new(
+        id: peep['id'],
+        message: peep['message'],
+        created_at: peep['created_at']
+      )
     end
   end
-
+    
   def self.create(message:)
-    if ENV['ENVIRONMENT'] == 'test'
-      connection = PG.connect(dbname: 'chitter_test')
-    else
-      connection = PG.connect(dbname: 'chitter')
-    end
-
-    result = connection.exec("INSERT INTO peeps(message) VALUES('#{message}') 
-                             RETURNING id, message, created_at;")
-    Peep.new(id: result[0]['id'], message: result[0]['message'], created_at: result[0]['created_at'])
+    result = DatabaseConnection.query(
+      "INSERT INTO peeps(message) VALUES('#{message}') RETURNING id, message, created_at;"
+      )
+    Peep.new(
+      id: result[0]['id'], 
+      message: result[0]['message'], 
+      created_at: result[0]['created_at']
+    )
   end
 end
