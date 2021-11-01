@@ -6,7 +6,7 @@ require './lib/peep'
 require './db_conn_setup'
 
 class Chitter < Sinatra::Base
-  
+
   configure :development do
     register Sinatra::Reloader
   end
@@ -21,7 +21,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/peeps/new' do
-    erb :"peeps/new"
+    erb :'peeps/new'
   end
 
   post '/peeps' do

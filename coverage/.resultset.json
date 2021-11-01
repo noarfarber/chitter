@@ -50,6 +50,19 @@
           null
         ]
       },
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/registration_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/noafarber/Projects/week_4/chitter-new/spec/features/viewing_peeps_spec.rb": {
         "lines": [
           1,
@@ -127,6 +140,6 @@
         ]
       }
     },
-    "timestamp": 1635512875
+    "timestamp": 1635789402
   }
 }
