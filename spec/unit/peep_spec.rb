@@ -32,10 +32,10 @@ describe Peep do
   describe '.create' do
     it 'creates a new post' do
       peep = Peep.create(message: 'Too much coffee')
-      persisted_data = persisted_data(id: peep.id)
+      persisted_data = persisted_data(table: :peeps, id: peep.id)
 
       expect(peep).to be_a Peep
-      expect(peep.id).to eq persisted_data['id']
+      expect(peep.id).to eq persisted_data.first['id']
       expect(peep.message).to eq 'Too much coffee'
       expect(peep.created_at).not_to be_nil
     end
