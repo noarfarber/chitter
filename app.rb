@@ -1,8 +1,7 @@
-# frozen_string_literal: true
-
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/peep'
+require './lib/user'
 require './db_conn_setup'
 
 class Chitter < Sinatra::Base
@@ -12,6 +11,18 @@ class Chitter < Sinatra::Base
   end
 
   get '/' do
+    redirect '/peeps'
+  end
+
+  get '/users/new' do
+    erb :'users/new'
+  end
+
+  post '/users' do
+    User.create(name: params[:name], 
+      username: params[:username], 
+      email: params[:email], 
+      password: params[:password])
     redirect '/peeps'
   end
 

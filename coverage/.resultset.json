@@ -50,15 +50,19 @@
           null
         ]
       },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/registration_spec.rb": {
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/sign_up_spec.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
           null,
           null
         ]
@@ -138,8 +142,27 @@
           1,
           null
         ]
+      },
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/unit/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1635789402
+    "timestamp": 1635857517
   }
 }
