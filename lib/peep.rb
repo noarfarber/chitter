@@ -1,4 +1,3 @@
-require 'pg'
 require_relative 'db_conn'
 require_relative 'user'
 
