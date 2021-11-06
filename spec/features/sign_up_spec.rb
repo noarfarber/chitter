@@ -1,6 +1,7 @@
 feature 'Sign up' do
   scenario 'A user can sign up to Chitter' do
     visit 'users/new'
+    
     fill_in('name', with: 'Alfie')
     fill_in('username', with: 'TheDog')
     fill_in('email', with: 'alfie@dogsmail.com')

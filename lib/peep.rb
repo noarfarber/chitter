@@ -1,5 +1,6 @@
 require 'pg'
 require_relative 'db_conn'
+require_relative 'user'
 
 class Peep
   attr_reader :id, :message, :created_at
