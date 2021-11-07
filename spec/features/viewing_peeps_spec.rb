@@ -6,9 +6,9 @@ feature 'Viewing peeps' do
     Peep.create(message: "Hello world")
     Peep.create(message: "I need coffee")
 
-    visit('/peeps')
+    visit '/peeps'
 
-    expect(page).to have_content "Hello world"
-    expect(page).to have_content "I need coffee"
+    expect(page).to have_content 'Hello world'
+    expect(page).to have_content 'I need coffee'
   end
 end

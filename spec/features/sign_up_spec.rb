@@ -12,6 +12,6 @@ feature 'Sign up' do
     click_button('Submit')
 
     expect(current_path).to eq '/peeps'
-    expect(page).to have_content "Hello, TheDog"
+    expect(page).to have_content 'Hello, TheDog'
   end
 end
