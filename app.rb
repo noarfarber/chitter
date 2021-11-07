@@ -12,7 +12,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/' do
-    redirect '/peeps'
+    erb :'/welcome'
   end
 
   get '/peeps' do
