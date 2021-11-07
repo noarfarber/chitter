@@ -13,7 +13,6 @@ class User
 
   def self.create(name:, username:, email:, password:)
     encrypted_password = BCrypt::Password.create(password)
-
     result = DatabaseConnection.query(
       "INSERT INTO users (name, username, email, password) VALUES($1, $2, $3, $4)
       RETURNING id, name, username, email;", [name, username, email, encrypted_password]
@@ -22,8 +21,7 @@ class User
       id: result[0]['id'], 
       name: result[0]['name'], 
       username: result[0]['username'], 
-      email: result[0]['email']
-    )
+      email: result[0]['email'])
   end
 
   def self.find(id)
@@ -35,7 +33,6 @@ class User
       id: result[0]['id'], 
       name: result[0]['name'], 
       username: result[0]['username'], 
-      email: result[0]['email']
-    )
+      email: result[0]['email'])
   end
 end
