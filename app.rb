@@ -26,7 +26,7 @@ class Chitter < Sinatra::Base
   end
 
   post '/peeps' do
-    Peep.create(message: params[:message])
+    Peep.create(message: params[:message], user_id: session[:user_id])
     redirect '/peeps'
   end
 
@@ -41,6 +41,11 @@ class Chitter < Sinatra::Base
       password: params[:password])
     session[:user_id] = user.id
     redirect '/peeps'
+  end
+
+  get '/users/:id/peeps/new' do
+    @user_id = User.find(session[:user_id])
+    erb :'peeps/new'
   end
 
   run! if app_file == $PROGRAM_NAME

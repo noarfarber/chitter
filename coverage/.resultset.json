@@ -39,18 +39,18 @@
       },
       "/Users/noafarber/Projects/week_4/chitter-new/spec/features/post_peep_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          1,
           null,
-          1,
           null,
-          1,
-          1,
           null,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -76,10 +76,28 @@
           null
         ]
       },
+      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/user_post_peep_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/noafarber/Projects/week_4/chitter-new/spec/features/viewing_peeps_spec.rb": {
         "lines": [
           1,
           null,
+          1,
           1,
           1,
           null,
@@ -98,23 +116,6 @@
         "lines": [
           1,
           1,
-          null,
-          1,
-          2,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
           1,
           null,
           1,
@@ -123,6 +124,26 @@
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -131,6 +152,8 @@
           1,
           1,
           1,
+          1,
+          null,
           null,
           1,
           1,
@@ -157,6 +180,7 @@
           1,
           null,
           1,
+          null,
           1,
           1,
           1,
@@ -207,6 +231,6 @@
         ]
       }
     },
-    "timestamp": 1636321309
+    "timestamp": 1637662473
   }
 }

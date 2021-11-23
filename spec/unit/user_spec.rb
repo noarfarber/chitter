@@ -2,6 +2,7 @@ require 'user'
 require 'db_helpers'
 
 describe User do
+
   describe '.create' do
     it 'creates a new user' do
       user = User.create(

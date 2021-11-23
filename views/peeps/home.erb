@@ -17,13 +17,12 @@
       <li>
         <%= peep.message %>
         <%= peep.created_at[0...16] %>
+        <%= peep.user_id %>
       </li>
     <% end %>
   </ul>
-    <form action="/peeps/new">
+    <form action="/users/<%= @user.id %>/peeps/new">
       <input type="submit" value="Post a Peep">
     </form>
 </body>
 </html>
-
-

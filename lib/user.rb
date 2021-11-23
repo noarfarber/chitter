@@ -1,5 +1,6 @@
 require 'bcrypt'
 require_relative 'db_conn'
+require_relative 'peep'
 
 class User
   attr_reader :id, :name, :username, :email
