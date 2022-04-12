@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt'
+gem "nokogiri", ">= 1.13.4"
 gem 'pg'
 gem 'rack'
 gem 'rake'

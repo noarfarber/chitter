@@ -1,143 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/db_conn_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/index_page_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/post_peep_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/sign_up_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/noafarber/Projects/week_4/chitter-new/spec/features/user_post_peep_spec.rb": {
         "lines": [
           1,
           1,
           1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/features/viewing_peeps_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/unit/peep_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
           1,
           null,
           1,
@@ -146,58 +14,9 @@
           1,
           1,
           null,
-          null,
-          null,
-          1,
-          1,
-          1,
           1,
           1,
           null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/db_helpers.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          2,
-          null
-        ]
-      },
-      "/Users/noafarber/Projects/week_4/chitter-new/spec/unit/user_spec.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
           1,
           null,
           1,
@@ -209,28 +28,20 @@
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
           null,
           null,
           1,
+          0,
+          0,
           null,
-          1,
-          1,
+          0,
           null,
-          null,
-          1,
-          1,
-          null,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637662473
+    "timestamp": 1638268045
   }
 }

@@ -35,7 +35,7 @@ describe Peep do
   describe '.create' do
     it 'creates a new post' do
       user = User.create(name: 'Alfie', username: 'Alfifi', email: 'alfie@doggo.com', password: '12345')
-      p peep = Peep.create(message: 'Too much coffee', user_id: user.id)
+      peep = Peep.create(message: 'Too much coffee', user_id: user.id)
       persisted_data = persisted_data(table: :peeps, id: peep['id'])
 
       # expect(peep).to be_a Peep
