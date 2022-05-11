@@ -52,13 +52,11 @@ I want to log out of Chitter
 ```
 
 ## Tech stack
-* Ruby 
-* Sinatra
+* Ruby
 * RSpec
+* Sinatra
 * Capybara
 * PostgreSQL
-* HTML
-* CSS
 
 ## Domain model
 The user can see all peeps and the time they were created:
